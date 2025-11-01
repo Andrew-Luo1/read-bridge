@@ -3,6 +3,7 @@
 import { Row, Col, Button } from 'antd';
 import { BookPreview, Resource } from '@/types/book';
 import BookUploader from '@/app/components/BookUploader';
+import BookDirectoryScanner from '@/app/components/BookDirectoryScanner';
 import { useStyleStore } from '@/store/useStyleStore';
 import { useRouter } from 'next/navigation';
 import { useSiderStore } from '@/store/useSiderStore';
@@ -65,6 +66,11 @@ export default function BookGrid({ books }: BookGridProps) {
         <Col span={24 / itemsPerRow}>
           <div className="aspect-[3/4] w-full">
             <BookUploader />
+          </div>
+        </Col>
+        <Col span={24 / itemsPerRow}>
+          <div className="aspect-[3/4] w-full">
+            <BookDirectoryScanner />
           </div>
         </Col>
       </Row>

@@ -8,6 +8,11 @@
   "permissions": [
     "core:default",
     "core:webview:allow-webview-position",
-    "core:webview:allow-webview-size"
+    "core:webview:allow-webview-size",
+    "core:path:allow-read-dir",
+    "core:path:allow-read-file",
+    "core:fs:allow-read-dir",
+    "core:fs:allow-read-file",
+    "dialog:allow-open"
   ]
 }
